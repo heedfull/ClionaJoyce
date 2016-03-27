@@ -32,7 +32,15 @@ server 'new.clionajoyce.ie', user: 'newcli'
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
+namespace :deploy do
+  task :copyrelease do
+    on roles :all do 
+      execute "rsync -r #{current_path}/* /home/newcli/new.clionajoyce.ie/wp-content/themes/ClionaJoyce"
+    end
+  end
+end
 
+after "deploy", "deploy:copyrelease"
 
 # Custom SSH Options
 # ==================
