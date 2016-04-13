@@ -1155,7 +1155,8 @@ td {
   float: left;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  margin-right: 0.5em; }
 
 .svg .icon-apple, .svg .branded li:nth-child(4n+1), .branded .svg li:nth-child(4n+1),
 .svg .icon-artichoke,
@@ -1173,7 +1174,7 @@ td {
 .svg .branded li:nth-child(4n+4), .branded
 .svg li:nth-child(4n+4),
 .svg .icon-tomato {
-  margin-left: 3em; }
+  margin-left: 1.5em; }
 
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
