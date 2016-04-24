@@ -121,6 +121,8 @@ function clionajoyce_scripts() {
 	wp_enqueue_script( 'clionajoyce-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'clionajoyce-modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '20160413', false );
+	wp_enqueue_script( 'clionajoyce-flickity', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array(), '20160423', true );
+	wp_enqueue_script( 'clionajoyce-homepage', get_template_directory_uri() . '/js/homepage.js', array('clionajoyce-flickity'), '20160423', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
