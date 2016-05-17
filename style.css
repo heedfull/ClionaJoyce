@@ -975,10 +975,8 @@ td {
     .logo {
       max-width: 9rem;
       position: absolute;
-      left: 0; } }
-
-.portait {
-  width: 38.195302843%; }
+      left: 0;
+      max-height: 216px; } }
 
 .nav-toggle {
   float: right;
